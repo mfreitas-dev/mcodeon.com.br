@@ -1035,3 +1035,8 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
 #textofooter {
   color: var(--muted);
 }
+
+.link-invisivel {
+  color: inherit;
+  text-decoration: none;
+}
