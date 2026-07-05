@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>MCODEON | Criação de Sites e Landing Pages em Aracaju</title>
-  <link rel="icon" type="image/png" href="assets/img/logo-limpo-semfundo.png">
+  <link rel="icon" type="image/png" href="assets/img/logo-limpo.png">
   
   <meta name="description" content="Desenvolvedor front-end em Aracaju, SE. Criação de landing pages e sites velozes focados em conversão com HTML, CSS, JavaScript e React." />
   
@@ -25,6 +25,7 @@
   <meta name="twitter:title" content="MCODEON | Desenvolvimento Web" />
   <meta name="twitter:description" content="Criação de landing pages e sites focados em conversão." />
   <meta name="twitter:image" content="https://mcodeon.com.br/assets/img/logo-horizontal-semfundo.png" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,8 +39,8 @@
     "@type": "ProfessionalService",
     "name": "MCODEON",
     "url": "https://mcodeon.com.br/",
-    "logo": "https://mcodeon.com.br/assets/img/logo-horizontal-semfundo.png",
-    "image": "https://mcodeon.com.br/assets/img/matheus.jpeg",
+    "logo": "https://mcodeon.com.br/assets/img/logo-limpo.png",
+    "image": "https://mcodeon.com.br/assets/img/matheus.webp",
     "description": "Desenvolvedor front-end freelance especializado em landing pages e sites estáticos de alta performance.",
     "address": {
       "@type": "PostalAddress",
@@ -57,6 +58,54 @@
     "priceRange": "$$"
   }
   </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quanto custa um site? Como funciona o pagamento?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O valor varia conforme o tipo de projeto — landing page, site institucional ou loja virtual têm custos diferentes. Após uma conversa rápida pelo WhatsApp, apresento um orçamento fechado, sem valores ocultos." }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto tempo leva para ficar pronto?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Landing pages ficam prontas entre 5 e 10 dias úteis, sites institucionais de 2 a 3 semanas, e lojas virtuais de 3 a 5 semanas." }
+    },
+    {
+      "@type": "Question",
+      "name": "Vocês fazem loja virtual (e-commerce)?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sim. Desenvolvemos lojas virtuais completas, com catálogo, carrinho, checkout e pagamento via Pix, cartão e boleto." }
+    },
+    {
+      "@type": "Question",
+      "name": "Preciso ter hospedagem e domínio antes de contratar?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Não. Auxilio na contratação e configuração de domínio e hospedagem, do zero até a publicação." }
+    },
+    {
+      "@type": "Question",
+      "name": "O site vai aparecer no Google?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Todo projeto inclui SEO técnico: meta tags otimizadas, structured data, sitemap, robots.txt e Open Graph." }
+    },
+    {
+      "@type": "Question",
+      "name": "Vou conseguir atualizar o site sozinho depois?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Depende do tipo de site. Projetos em HTML/CSS puro exigem algum conhecimento técnico. Lojas virtuais com painel de administração permitem atualizar produtos e textos sem mexer em código." }
+    },
+    {
+      "@type": "Question",
+      "name": "Preciso ter o conteúdo pronto antes de começar?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O ideal é ter textos, fotos e logo disponíveis, mas não é obrigatório. Podemos começar com a estrutura e encaixar o conteúdo conforme você prepara." }
+    },
+    {
+      "@type": "Question",
+      "name": "E se eu não gostar do resultado? Tem revisão?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Todo projeto inclui rodadas de revisão antes da entrega e suporte de 30 dias após a publicação para ajustes sem custo adicional." }
+    },
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -67,12 +116,13 @@
   <!-- NAV -->
   <nav>
     <a href="#" class="nav-logo">
-      <img src="assets/img/logo-horizontal-semfundo.png" alt="MCODEON" />
+      <img src="assets/img/logo-horizontal-semfundo.png" alt="LOGO MCODEON" width="140" height="36"/>
     </a>
     <ul class="nav-links">
       <li><a href="#servicos">Serviços</a></li>
       <li><a href="#portfolio">Portfólio</a></li>
       <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#faq">Dúvidas frequentes</a></li>
     </ul>
     <a href="#contato" class="nav-cta">Falar agora</a>
     <button class="nav-hamburger" id="hamburger" aria-label="Menu">
@@ -85,6 +135,7 @@
     <a href="#servicos" class="drawer-link">Serviços</a>
     <a href="#portfolio" class="drawer-link">Portfólio</a>
     <a href="#sobre" class="drawer-link">Sobre</a>
+    <a href="#faq">Dúvidas frequentes</a>
     <a href="#contato" class="drawer-link" style="color:var(--accent)">Falar agora →</a>
   </div>
 
@@ -197,7 +248,7 @@
           <line x1="70" y1="40" x2="76" y2="40" stroke="#00C896" stroke-width="1.5" opacity="0.6"/>
         </svg>
         <!-- logo centered inside the rings -->
-        <img src="assets/img/logo-limpo-semfundo.png" alt="MCODEON" class="mark-logo" />
+        <img src="assets/img/logo-limpo-semfundo.png" alt="MCODEON" class="mark-logo" width="32" height="32"/>
       </div>
 
       <p class="hero-tag">Desenvolvimento Web · Aracaju, SE</p>
@@ -279,24 +330,31 @@
         <h3 class="service-name">Landing Pages</h3>
         <p class="service-desc">Páginas de conversão construídas para capturar leads, vender produtos e apresentar serviços com foco total em resultado.</p>
       </div>
-      <div class="service-card">
-        <p class="service-num">02</p>
-        <span class="service-icon">🏢</span>
-        <h3 class="service-name">Sites Institucionais</h3>
-        <p class="service-desc">Presença digital profissional para empresas e marcas. Código limpo, sem frameworks pesados, carregamento rápido.</p>
-      </div>
-      <div class="service-card">
-        <p class="service-num">03</p>
-        <span class="service-icon">📐</span>
-        <h3 class="service-name">Design + Código</h3>
-        <p class="service-desc">Do layout ao HTML/CSS final. Cada projeto tem identidade visual própria, pensada para o segmento do cliente.</p>
-      </div>
-      <div class="service-card">
-        <p class="service-num">04</p>
-        <span class="service-icon">🔍</span>
-        <h3 class="service-name">SEO Técnico</h3>
-        <p class="service-desc">Structured data (JSON-LD), Open Graph, sitemap, robots.txt, meta tags — tudo configurado para seu site ranquear bem e aparecer no topo das pesquisas.</p>
-      </div>
+    <div class="service-card service-card--featured">
+      <p class="service-num">02</p>
+      <span class="service-badge">Novo</span>
+      <span class="service-icon">🛒</span>
+      <h3 class="service-name">Loja Virtual (E-commerce)</h3>
+      <p class="service-desc">Catálogo de produtos, carrinho, checkout e pagamento via Pix, cartão e boleto. Ideal para quem já vende pelo WhatsApp ou Instagram e quer escalar com uma loja própria — sem mensalidade de plataforma.</p>
+    </div>
+    <div class="service-card">
+      <p class="service-num">03</p>
+      <span class="service-icon">🏢</span>
+      <h3 class="service-name">Sites Institucionais</h3>
+      <p class="service-desc">Presença digital profissional para empresas e marcas. Código limpo, sem frameworks pesados, carregamento rápido.</p>
+    </div>
+    <div class="service-card">
+      <p class="service-num">04</p>
+      <span class="service-icon">📐</span>
+      <h3 class="service-name">Design + Código</h3>
+      <p class="service-desc">Do layout ao HTML/CSS final. Cada projeto tem identidade visual própria, pensada para o segmento do cliente.</p>
+    </div>
+    <div class="service-card">
+      <p class="service-num">05</p>
+      <span class="service-icon">🔍</span>
+      <h3 class="service-name">SEO Técnico</h3>
+      <p class="service-desc">Structured data (JSON-LD), Open Graph, sitemap, robots.txt, meta tags — tudo configurado para ranquear bem.</p>
+    </div>
     </div>
   </section>
 
@@ -342,11 +400,12 @@
       <div class="proj">
         <a href="http://ajuteccel.com.br" target="_blank" rel="noopener noreferrer" class="link-invisivel">
           <div class="proj-inner">
+            <img src="assets/img/ajuteccelprint (1).webp" alt="Site da AJUTEC CEL, loja de reparo e venda de celulares em Aracaju" class="proj-shot" loading="lazy" width="1600" height="1000">
             <div class="proj-bg-text">SMARTPHONE</div>
             <div class="proj-arrow"><svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg></div>
             <p class="proj-cat">Loja de reparo e venda de celulares · Landing Page</p>
             <h3 class="proj-name">AJUTEC CEL</h3>
-            <p class="proj-desc">Interface de alta performance voltada para manutenção de smartphones. Paleta azul tecnológico, laranja e grafite, carregamento instantâneo e CTA para orçamentos rápidos via WhatsApp.</p>
+            <!-- <p class="proj-desc">Interface de alta performance voltada para manutenção de smartphones. Paleta azul tecnológico, laranja e grafite, carregamento instantâneo e CTA para orçamentos rápidos via WhatsApp.</p> -->
           </div>
         </a>
         
@@ -363,33 +422,36 @@
       <div class="proj">
         <a href="http://grupoajutec.com.br" target="_blank" rel="noopener noreferrer" class="link-invisivel">
           <div class="proj-inner">
+            <img src="assets/img/grupoajutec.webp" alt="Site institucional do Grupo AJUTEC, ecossistema de tecnologia" class="proj-shot" loading="lazy" width="1600" height="1000">
             <div class="proj-bg-text">AJUTEC</div>
             <div class="proj-arrow"><svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg></div>
             <p class="proj-cat">Tecnologia · Grupo</p>
             <h3 class="proj-name">Grupo AJUTEC</h3>
-            <p class="proj-desc">Ecossistema multi-página para quatro marcas: SEO completo, tema escuro e identidade consistente.</p>
+            <!-- <p class="proj-desc">Ecossistema multi-página para quatro marcas: SEO completo, tema escuro e identidade consistente.</p> -->
           </div>
         </a>
       </div>
       <div class="proj">
         <a href="http://fferreirainfo.com.br" target="_blank" rel="noopener noreferrer" class="link-invisivel">
         <div class="proj-inner">
+          <img src="assets/img/fferreirainfo (1).webp" alt="Site da FFerreira Info, empresa de suporte em TI" class="proj-shot" loading="lazy" width="1600" height="1000">
           <div class="proj-bg-text">INFO</div>
           <div class="proj-arrow"><svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg></div>
           <p class="proj-cat">TI &amp; Informática · Institucional</p>
           <h3 class="proj-name">FFerreira Info</h3>
-          <p class="proj-desc">Design direto para serviços de suporte de TI. Estrutura leve em código puro, carregamento ultra veloz e foco total em conversão local.</p>
+          <!-- <p class="proj-desc">Design direto para serviços de suporte de TI. Estrutura leve em código puro, carregamento ultra veloz e foco total em conversão local.</p> -->
         </div>
       </a>
       </div>
       <div class="proj">
         <a href="http://ajutec.seg.br" target="_blank" rel="noopener noreferrer" class="link-invisivel">
           <div class="proj-inner">
+            <img src="assets/img/ajutecseg.webp" alt="Site institucional da Ajutec Seg, segurança eletrônica" class="proj-shot" loading="lazy" width="1600" height="1000">
             <div class="proj-bg-text">SEGURANÇA</div>
             <div class="proj-arrow"><svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg></div>
             <p class="proj-cat">Segurança Eletrônica · Institucional</p>
             <h3 class="proj-name">Ajutec Seg</h3>
-            <p class="proj-desc">Plataforma institucional robusta desenvolvida para o segmento de monitoramento e segurança patrimonial. Traz uma interface premium com paleta sóbria e alto contraste para transmitir autoridade, proteção e máxima confiabilidade. Conta com catálogo estruturado de soluções residenciais e corporativas, código limpo e semântico para máxima performance e pontos estratégicos de conversão para chamados e orçamentos.</p>
+            <!-- <p class="proj-desc">Plataforma institucional robusta desenvolvida para o segmento de monitoramento e segurança patrimonial. Traz uma interface premium com paleta sóbria e alto contraste para transmitir autoridade, proteção e máxima confiabilidade. Conta com catálogo estruturado de soluções residenciais e corporativas, código limpo e semântico para máxima performance e pontos estratégicos de conversão para chamados e orçamentos.</p> -->
           </div>
         </a>
         </div>
@@ -400,7 +462,7 @@
   <section id="sobre">
     <div class="about-visual reveal">
       <div class="about-box">
-        <div class="about-initials"><img src="assets/img/matheus.jpeg" id="fotosobre" alt="Matheus - Desenvolvedor Front-end da MCODEON em Aracaju"></div>
+        <div class="about-initials"><img src="assets/img/matheus.webp" id="fotosobre" alt="Matheus - Desenvolvedor Front-end da MCODEON em Aracaju" loading="lazy"></div>
       </div>
       <div class="about-badge">
         <strong>SE</strong>
@@ -411,7 +473,7 @@
       <p class="section-label">Quem está por trás</p>
       <h2 class="section-title">Sobre a<br>MCODEON</h2>
       <p class="about-text">
-        Sou Matheus, pós-graduado em Análise e Desenvolvimento de sistemas, atuo como desenvolvedor front-end freelance especializado em <strong>landing pages e sites estáticos</strong>. Trabalho com clientes reais de diferentes segmentos — advocacia, tecnologia, turismo, saúde — sempre com foco em entregas que funcionam de verdade.
+        Sou Matheus, pós-graduado em Análise e Desenvolvimento de sistemas, atuo como desenvolvedor front-end freelance especializado em <strong>landing pages profissionais e lojas virtuais</strong>. Trabalho com clientes reais de diferentes segmentos — advocacia, tecnologia, turismo, saúde — sempre com foco em entregas que funcionam de verdade.
       </p>
       <p class="about-text">
         Cada projeto é construído com <strong>HTML, CSS e JavaScript puro</strong>. Sem frameworks desnecessários, sem overhead. O resultado: sites velozes, fáceis de hospedar e com identidade visual forte que representa a marca do cliente.
@@ -428,6 +490,98 @@
         <span class="skill-tag">WhatsApp API</span>
       </div>
       <a href="#contato" class="btn-primary">Solicitar orçamento</a>
+    </div>
+  </section>
+
+  <!-- ══ FAQ ══ -->
+  <section id="faq" aria-label="Perguntas frequentes">
+    <div class="reveal">
+      <p class="section-label">Tire suas dúvidas</p>
+      <h2 class="section-title">As <em>principais dúvidas</em><br>antes de contratar</h2>
+    </div>
+
+    <div class="faq-list reveal">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Quanto custa um site? Como funciona o pagamento?</span>
+          <div class="faq-icon"><span></span><span></span></div>
+        </button>
+        <div class="faq-answer">
+          <p>O valor varia conforme o tipo de projeto — uma landing page simples tem um custo diferente de um site institucional completo ou de uma loja virtual. Após uma conversa rápida pelo WhatsApp para entender o que você precisa, apresento um orçamento fechado, sem valores ocultos. Trabalho com entrada e saldo na entrega, e aceito parcelamento para projetos maiores.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Quanto tempo leva para ficar pronto?</span>
+          <div class="faq-icon"><span></span><span></span></div>
+        </button>
+        <div class="faq-answer">
+          <p>Uma landing page costuma ficar pronta entre 5 e 10 dias úteis. Sites institucionais com mais seções levam de 2 a 3 semanas. Lojas virtuais (e-commerce) dependem da quantidade de produtos e integrações, mas o prazo médio é de 3 a 5 semanas. O cronograma exato é definido no início do projeto e cumprido à risca.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Vocês fazem loja virtual (e-commerce)?</span>
+          <div class="faq-icon"><span></span><span></span></div>
+        </button>
+        <div class="faq-answer">
+          <p>Sim. Desenvolvemos lojas virtuais completas, com catálogo de produtos, carrinho, checkout e integração com meios de pagamento como Pix, cartão e boleto. Se você já vende pelo WhatsApp ou Instagram e quer escalar com uma loja própria, podemos montar isso de forma profissional, com painel fácil de gerenciar e sem mensalidade de plataforma.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Preciso ter hospedagem e domínio antes de contratar?</span>
+          <div class="faq-icon"><span></span><span></span></div>
+        </button>
+        <div class="faq-answer">
+          <p>Não precisa. Se você ainda não tem domínio (.com.br, .com) ou hospedagem, eu auxilio na contratação e configuração de tudo — da compra do domínio até a publicação do site no ar. Se você já tem um serviço ativo, é só passar os acessos que eu cuido do restante.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>O site vai aparecer no Google?</span>
+          <div class="faq-icon"><span></span><span></span></div>
+        </button>
+        <div class="faq-answer">
+          <p>Todo projeto entregue inclui SEO técnico básico: title e description otimizados, structured data (JSON-LD), sitemap.xml, robots.txt, Open Graph para WhatsApp e redes sociais, e código semântico que o Google consegue ler bem. Isso coloca o site em boas condições para ranquear — principalmente em buscas locais, como "serviço + cidade". Para campanhas pagas ou SEO avançado, podemos conversar separadamente.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Vou conseguir atualizar o site sozinho depois?</span>
+          <div class="faq-icon"><span></span><span></span></div>
+        </button>
+        <div class="faq-answer">
+          <p>Depende do tipo de site. Projetos em HTML/CSS puro são mais simples de manter tecnicamente, mas exigem algum conhecimento para editar. Lojas virtuais e sites com painel de administração permitem que você mesmo atualize produtos, textos e imagens sem precisar mexer em código. Para qualquer dúvida após a entrega, estou disponível via WhatsApp para suporte.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>Preciso ter o conteúdo pronto antes de começar?</span>
+          <div class="faq-icon"><span></span><span></span></div>
+        </button>
+        <div class="faq-answer">
+          <p>O ideal é ter os textos, fotos e logo disponíveis para agilizar o processo — mas não é obrigatório desde o início. Podemos começar com a estrutura e ir encaixando o conteúdo conforme você prepara. Se precisar de ajuda para organizar os textos, também posso dar uma mão nisso sem custo adicional.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          <span>E se eu não gostar do resultado? Tem revisão?</span>
+          <div class="faq-icon"><span></span><span></span></div>
+        </button>
+        <div class="faq-answer">
+          <p>Todo projeto inclui rodadas de revisão antes da entrega final. Você vê o site antes de ir ao ar e pode pedir ajustes de layout, cores, textos e estrutura. O objetivo é que você fique satisfeito com o resultado — não entrego nada sem aprovação. Após a publicação, ofereço suporte por 30 dias para correções e pequenos ajustes sem custo adicional.</p>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -457,11 +611,23 @@
   <!-- FOOTER -->
   <footer>
     <div class="footer-logo">
-      <img src="assets/img/logo-horizontal-semfundo.png" alt="MCODEON" />
+      <img src="assets/img/logo-horizontal-semfundo.png" alt="MCODEON" width="140" height="36"/>
     </div>
     <p>© 2026 MCODEON · Aracaju, Sergipe</p>
     <p id="textofooter">HTML · CSS · JavaScript</p>
   </footer>
+
+  <!-- WHATSAPP FLUTUANTE -->
+  <a href="https://wa.me/5579998523718?text=Ol%C3%A1%20Matheus%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20um%20projeto"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="whatsapp-float"
+    aria-label="Falar no WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+      <path d="M12.031 0C5.385 0 .004 5.385.004 12.035c0 2.13.553 4.208 1.603 6.04L.012 24l6.104-1.601a11.96 11.96 0 0 0 5.915 1.562h.003c6.645 0 12.029-5.385 12.029-12.035C24.063 5.385 18.679 0 12.031 0zm0 21.956c-1.802 0-3.567-.484-5.114-1.402l-.367-.217-3.799.996 1.014-3.704-.239-.379a9.927 9.927 0 0 1-1.52-5.305c0-5.516 4.492-10.007 10.025-10.007 5.534 0 10.026 4.491 10.026 10.007 0 5.517-4.492 10.011-10.026 10.011zm5.502-7.514c-.302-.151-1.785-.882-2.062-.983-.277-.101-.479-.151-.68.151-.202.302-.781.983-.956 1.185-.176.202-.353.227-.655.076-.302-.151-1.275-.47-2.428-1.5-1.01-.904-1.691-2.02-1.892-2.322-.202-.302-.021-.466.13-.617.135-.136.302-.352.453-.529.151-.176.202-.302.302-.503.1-.202.05-.378-.025-.529-.076-.151-.68-1.638-.931-2.242-.245-.589-.494-.508-.68-.518a14.28 14.28 0 0 0-.579-.011c-.202 0-.529.076-.806.378-.277.302-1.058 1.033-1.058 2.519s1.083 2.921 1.234 3.123c.151.202 2.129 3.249 5.158 4.557.72.311 1.282.497 1.721.636.723.23 1.381.198 1.901.12.58-.087 1.785-.73 2.037-1.435.252-.705.252-1.309.176-1.435-.076-.126-.277-.202-.579-.353z"/>
+    </svg>
+    <span class="whatsapp-float__pulse"></span>
+  </a>
 
 <script src="assets/js/app.js"></script>
 </body>
