@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Criação de Sites Profissionais em Aracaju | MCODEON</title>
 <link rel="icon" type="image/png" href="../assets/img/logo-limpo.png">
 <meta name="description" content="Procurando criação de sites em Aracaju? Desenvolvemos sites profissionais, ultrarrápidos e otimizados para o Google. Solicite um orçamento na MCODEON!">
@@ -68,11 +68,20 @@
       "addressCountry": "BR"
     },
     "areaServed": [
-      { "@type": "City", "name": "Aracaju" },
-      { "@type": "State", "name": "Sergipe" }
+      {
+        "@type": "City",
+        "name": "Aracaju"
+      },
+      {
+        "@type": "State",
+        "name": "Sergipe"
+      }
     ]
   },
-  "areaServed": { "@type": "State", "name": "Sergipe" }
+  "areaServed": {
+    "@type": "State",
+    "name": "Sergipe"
+  }
 }
 </script>
 
@@ -81,8 +90,18 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://mcodeon.com.br" },
-    { "@type": "ListItem", "position": 2, "name": "Criação de Sites", "item": "https://mcodeon.com.br/criacao-de-sites" }
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://mcodeon.com.br"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Criação de Sites",
+      "item": "https://mcodeon.com.br/criacao-de-sites"
+    }
   ]
 }
 </script>
@@ -101,7 +120,7 @@
   --faint:     #1c1c1c;
 }
 
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
 body {
@@ -148,34 +167,98 @@ nav {
 }
 .nav-links a:hover { color: var(--accent); }
 .nav-cta {
-  font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 1.1rem;
-  letter-spacing: 0.06em; text-transform: uppercase; background-color: var(--accent); color: var(--bg);
-  text-decoration: none; border: 1px solid var(--accent); padding: 0.6rem 1.3rem;
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 1.35rem;
+  letter-spacing: 0.12em; text-transform: uppercase; background-color: var(--accent); color: var(--bg);
+  text-decoration: none; border: 1px solid var(--accent); padding: 0.60rem 1.5rem;
   transition: background 0.2s, color 0.2s; border-radius: 6px;
-  white-space: nowrap;
-    animation: shimmerAccent 4.6s 0s ease-in-out infinite;
+  animation: shimmerAccent 4.6s 0s ease-in-out infinite;
   filter: drop-shadow(0 0 22px rgba(0,200,150,0.5)) drop-shadow(0 0 50px rgba(0,200,150,0.2));
 }
-.nav-cta:hover { background: var(--accent2); }
 
 /* ── GARANTIA & PROCESSO SEGURO ── */
-#garantia { padding: 6rem clamp(1.5rem, 8vw, 6rem); background: var(--bg); border-top: 1px solid var(--border); }
-.garantia-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin-top: 3.5rem; }
+#garantia {
+  padding: 6rem clamp(1.5rem, 8vw, 6rem);
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+}
+
+.garantia-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+}
+
 .garantia-card {
-  background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 2.2rem 1.8rem;
-  position: relative; display: flex; flex-direction: column; align-items: flex-start;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2.2rem 1.8rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   transition: border-color 0.25s ease, transform 0.25s ease, background 0.25s ease;
 }
-.garantia-card:hover { background: var(--bg3); border-color: var(--accent); transform: translateY(-4px); }
-.garantia-icon {
-  width: 3.2rem; height: 3.2rem; background: rgba(0, 200, 150, 0.08); border: 1px solid rgba(0, 200, 150, 0.25);
-  border-radius: 10px; display: flex; align-items: center; justify-content: center; margin-bottom: 1.4rem;
-  color: var(--accent); transition: background 0.25s ease, border-color 0.25s ease;
+
+.garantia-card:hover {
+  background: var(--bg3);
+  border-color: var(--accent);
+  transform: translateY(-4px);
 }
-.garantia-card:hover .garantia-icon { background: rgba(0, 200, 150, 0.18); border-color: var(--accent); }
-.garantia-icon svg { width: 1.6rem; height: 1.6rem; stroke: var(--accent); }
-.garantia-title { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.55rem; text-transform: uppercase; letter-spacing: 0.03em; color: var(--text); margin-bottom: 0.6rem; }
-.garantia-desc { font-size: 0.92rem; color: var(--muted2); line-height: 1.7; }
+
+/* Caixa do Ícone em formato de badge translúcida */
+.garantia-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  background: rgba(0, 200, 150, 0.08);
+  border: 1px solid rgba(0, 200, 150, 0.25);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+  color: var(--accent);
+  transition: background 0.25s ease, border-color 0.25s ease;
+}
+
+.garantia-card:hover .garantia-icon {
+  background: rgba(0, 200, 150, 0.18);
+  border-color: var(--accent);
+}
+
+.garantia-icon svg {
+  width: 1.6rem;
+  height: 1.6rem;
+  stroke: var(--accent);
+}
+
+.garantia-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1.55rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text);
+  margin-bottom: 0.6rem;
+}
+
+.garantia-desc {
+  font-size: 0.92rem;
+  color: var(--muted2);
+  line-height: 1.7;
+}
+
+/* Responsividade para Telas Menores */
+@media (max-width: 768px) {
+  #garantia {
+    padding: 4rem 1.5rem;
+  }
+  .garantia-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
 
 /* ── HERO ── */
 #hero {
@@ -191,15 +274,15 @@ nav {
 }
 .hero-inner { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; }
 
-.hero-mark { width: 6.5rem; height: 6.5rem; margin-bottom: 2rem; opacity: 0; animation: fadeUp 0.6s 0.15s forwards; position: relative; }
+.hero-mark { width: 5rem; height: 5rem; margin-bottom: 2rem; opacity: 0; animation: fadeUp 0.6s 0.15s forwards; position: relative; }
 .hero-mark svg { width: 100%; height: 100%; display: block; }
 .mark-logo { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 44%; height: 44%; object-fit: contain; pointer-events: none; }
 .mark-ring { animation: spin 8s linear infinite; transform-origin: 50% 50%; transform-box: fill-box; }
 .mark-ring-2 { animation: spinRev 12s linear infinite; transform-origin: 50% 50%; transform-box: fill-box; }
 
 .hero-tag {
-  font-family: 'Barlow Condensed', sans-serif; font-size: 1.05rem; letter-spacing: 0.22em;
-  text-transform: uppercase; margin-bottom: 1.4rem; max-width: 720px;
+  font-family: 'Barlow Condensed', sans-serif; font-size: 0.82rem; letter-spacing: 0.22em;
+  text-transform: uppercase; margin-bottom: 1.4rem;
   background: linear-gradient(100deg, var(--accent) 0%, var(--accent) 35%, #b0fff0 50%, var(--accent) 65%, var(--accent) 100%);
   background-size: 250% 100%; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
   animation: fadeUp 0.6s 0.3s forwards, shimmerFast 3.5s 1s ease-in-out infinite;
@@ -207,7 +290,7 @@ nav {
 
 .hero-title {
   font-family: 'Barlow Condensed', sans-serif; font-weight: 900;
-  font-size: clamp(3.8rem, 10vw, 8.5rem); line-height: 0.95; letter-spacing: -0.01em;
+  font-size: clamp(3.4rem, 10vw, 8rem); line-height: 0.95; letter-spacing: -0.01em;
   text-transform: uppercase; opacity: 0; animation: fadeUp 0.7s 0.45s forwards;
 }
 .hero-title .line1 {
@@ -239,8 +322,8 @@ nav {
 .diamond { width: 8px; height: 8px; background: var(--accent); transform: rotate(45deg); }
 
 .hero-sub {
-  font-size: clamp(1.1rem, 1.9vw, 1.4rem); font-weight: 300; color: var(--text);
-  max-width: 680px; line-height: 1.75; opacity: 0; animation: fadeUp 0.7s 0.8s forwards;
+  font-size: clamp(0.95rem, 1.6vw, 1.1rem); font-weight: 300; color: var(--text);
+  max-width: 600px; line-height: 1.75; opacity: 0; animation: fadeUp 0.7s 0.8s forwards;
 }
 .hero-sub .hl {
   background: linear-gradient(100deg, var(--accent2) 0%, var(--accent2) 30%, #ffffff 48%, var(--accent2) 68%, var(--accent2) 100%);
@@ -252,34 +335,34 @@ nav {
 
 .hero-actions { display: flex; gap: 1rem; margin-top: 2.5rem; flex-wrap: wrap; justify-content: center; opacity: 0; animation: fadeUp 0.7s 0.95s forwards; }
 .btn-primary {
-  font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.45rem; letter-spacing: 0.06em;
-  text-transform: uppercase; color: #000; background: var(--accent); border: none; padding: 1.05rem 2.4rem;
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.70rem; letter-spacing: 0.1em;
+  text-transform: uppercase; color: #000; background: var(--accent); border: none; padding: 0.85rem 2.2rem;
   cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.2s, transform 0.15s; border-radius: 6px;
   animation: shimmerAccent 4.6s 0s ease-in-out infinite;
   filter: drop-shadow(0 0 22px rgba(0,200,150,0.5)) drop-shadow(0 0 50px rgba(0,200,150,0.2));
 }
 .btn-primary:hover { background: var(--accent2); transform: translateY(-2px); }
 .btn-ghost {
-  font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 1.45rem; letter-spacing: 0.06em;
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: 1.70rem; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--text); background: transparent; border: 1px solid var(--border);
-  padding: 1.05rem 2.4rem; cursor: pointer; text-decoration: none; display: inline-block;
+  padding: 0.85rem 2.2rem; cursor: pointer; text-decoration: none; display: inline-block;
   transition: border-color 0.2s, color 0.2s; border-radius: 6px;
 }
 .btn-ghost:hover { border-color: var(--text); }
 .btn-icon { display: inline-flex; align-items: center; justify-content: center; gap: 0.75rem; }
-.btn-icon svg { width: 1.6rem; height: 1.6rem; fill: currentColor; flex-shrink: 0; }
+.btn-icon svg { width: 2rem; height: 2rem; fill: currentColor; flex-shrink: 0; }
 
 .hero-stats { display: flex; gap: 3rem; margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--border); opacity: 0; animation: fadeUp 0.7s 1.1s forwards; }
-.stat { text-align: center; max-width: 220px; }
+.stat { text-align: center; }
 .stat-num {
-  font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 3.4rem; line-height: 1;
+  font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 2.6rem; line-height: 1;
   background: linear-gradient(100deg, #e8e4dc 0%, #e8e4dc 25%, #ffffff 44%, #d0fff0 50%, #ffffff 56%, #e8e4dc 75%, #e8e4dc 100%);
   background-size: 220% 100%; -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
   animation: shimmerSlow 5s ease-in-out infinite;
 }
 .stat:nth-child(2) .stat-num { animation-delay: 0.6s; }
 .stat:nth-child(3) .stat-num { animation-delay: 1.2s; }
-.stat-label { font-size: 0.88rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text); margin-top: 0.4rem; }
+.stat-label { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text); margin-top: 0.3rem; }
 
 .scroll-hint { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; opacity: 0; animation: fadeUp 0.7s 1.4s forwards; }
 .scroll-hint span { font-family: 'Barlow Condensed', sans-serif; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
@@ -296,6 +379,123 @@ nav {
 .marquee-inner span { font-family: 'Barlow Condensed', sans-serif; font-size: 0.8rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); white-space: nowrap; }
 .marquee-inner span.dot { color: var(--text); font-size: 1.2rem; line-height: 1; }
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+
+/* ════════════════════════════════
+   PORTFOLIO
+════════════════════════════════ */
+#portfolio {
+  padding: 6rem clamp(1.5rem, 8vw, 6rem);
+  background: var(--bg2);
+}
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+}
+
+/* remove os spans desiguais antigos */
+.proj:nth-child(1),
+.proj:nth-child(2),
+.proj:nth-child(3),
+.proj:nth-child(4) {
+  grid-column: span 1;
+}
+
+.proj-inner {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;   /* horizontal, controla a altura de verdade */
+  min-height: unset;        /* remove qualquer min-height antigo */
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.proj-shot {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;  /* desce um pouco o corte, evita pegar o texto gigante do hero */
+  opacity: 0.45;                 /* mais discreta, pra não brigar com o overlay */
+  transition: opacity 0.35s ease, transform 0.5s ease;
+  z-index: 0;
+}
+
+.proj:hover .proj-shot {
+  opacity: 0.7;
+  transform: scale(1.04);
+}
+
+/* overlay mais forte e mais uniforme, cobre o card inteiro */
+.proj-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(13,13,13,0.97) 0%,
+    rgba(13,13,13,0.88) 40%,
+    rgba(13,13,13,0.6) 75%,
+    rgba(13,13,13,0.5) 100%
+  );
+  z-index: 1;
+}.proj-cat {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.92rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.6rem;
+}
+.proj-name {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.5rem;
+}
+.proj-desc { font-size: 0.82rem; color: var(--text); line-height: 1.7; }
+.proj-arrow {
+  position: absolute;
+  top: 1.5rem; right: 1.5rem;
+  width: 2.2rem; height: 2.2rem;
+  border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0;
+  transform: translate(-4px, 4px);
+  transition: opacity 0.25s, transform 0.25s;
+  border-radius: 6px; /* Adicionado: curvatura na caixinha da seta */
+}
+.proj:hover .proj-arrow { opacity: 1; transform: translate(0,0); }
+.proj-arrow svg { width: 14px; fill: var(--accent); }
+.proj-bg-text {
+  position: absolute;
+  bottom: -1rem; right: -0.5rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 900;
+  font-size: 7rem;
+  letter-spacing: -0.04em;
+  color: rgba(255,255,255,0.025);
+  text-transform: uppercase;
+  pointer-events: none;
+  -webkit-user-select: none;
+  user-select: none;
+  transition: opacity 0.3s;
+}
+.proj:hover .proj-bg-text { opacity: 0; }
+
 
 /* ── SECTION BASE ── */
 section { position: relative; z-index: 1; }
@@ -320,7 +520,7 @@ section { position: relative; z-index: 1; }
   font-size: clamp(1.7rem, 4vw, 3rem); line-height: 1.15; margin-bottom: 2.2rem;
 }
 .dor-quote em { font-style: normal; color: var(--accent); }
-.dor-text { font-size: 1.1rem; color: var(--muted); line-height: 1.9; max-width: 660px; margin: 0 auto; }
+.dor-text { font-size: 1.28rem; color: var(--muted); line-height: 1.9; max-width: 660px; margin: 0 auto; }
 .dor-text strong { color: var(--text); font-weight: 500; }
 
 /* ── SERVICES / DIFERENCIAIS ── */
@@ -330,7 +530,7 @@ section { position: relative; z-index: 1; }
 .service-card::before { content: ''; position: absolute; top: 0; left: 0; width: 3px; height: 0; background: var(--accent); transition: height 0.35s ease; }
 .service-card:hover { background: var(--bg3); }
 .service-card:hover::before { height: 100%; }
-.service-num { font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem; letter-spacing: 0.18em; color: var(--muted); margin-bottom: 1.5rem; text-transform: uppercase; }
+.service-num { font-family: 'Barlow Condensed', sans-serif; font-size: 0.72rem; letter-spacing: 0.18em; color: var(--muted); margin-bottom: 1.5rem; }
 .service-icon { font-size: 2rem; margin-bottom: 1rem; display: block; }
 .service-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.8rem; }
 .service-desc { font-size: 0.88rem; color: var(--muted); line-height: 1.75; }
@@ -349,19 +549,10 @@ section { position: relative; z-index: 1; }
 #portfolio { padding: 6rem clamp(1.5rem, 8vw, 6rem); background: var(--bg2); }
 .portfolio-header { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1.5rem; margin-bottom: 3rem; }
 .portfolio-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); }
-.proj:nth-child(1), .proj:nth-child(2), .proj:nth-child(3), .proj:nth-child(4) { grid-column: span 1; }
-
 .proj-inner { position: relative; overflow: hidden; aspect-ratio: 16 / 10; padding: 1.75rem; display: flex; flex-direction: column; justify-content: flex-end; }
-.proj-shot {
-  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%;
-  opacity: 0.45; transition: opacity 0.35s ease, transform 0.5s ease; z-index: 0;
-  background: linear-gradient(155deg, var(--bg3), var(--bg));
-}
-.proj:hover .proj-shot { opacity: 0.7; transform: scale(1.04); }
 .proj-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,13,13,0.97) 0%, rgba(13,13,13,0.88) 40%, rgba(13,13,13,0.6) 75%, rgba(13,13,13,0.5) 100%); z-index: 1; }
-.proj-cat { font-family: 'Barlow Condensed', sans-serif; font-size: 0.92rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem; line-height: 1.35; }
-.proj-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.6rem; text-transform: uppercase; letter-spacing: 0.02em; margin-bottom: 0.5rem; }
-.proj-desc { font-size: 0.82rem; color: var(--text); line-height: 1.7; }
+.proj-cat { font-family: 'Barlow Condensed', sans-serif; font-size: 0.92rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem; }
+.proj-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 2.4rem; text-transform: uppercase; letter-spacing: 0.02em; margin-bottom: 0.5rem; }
 .proj-arrow {
   position: absolute; top: 1.5rem; right: 1.5rem; width: 2.2rem; height: 2.2rem; border: 1px solid var(--border);
   display: flex; align-items: center; justify-content: center; opacity: 0; transform: translate(-4px, 4px);
@@ -372,24 +563,22 @@ section { position: relative; z-index: 1; }
 .proj-bg-text {
   position: absolute; bottom: -1rem; right: -0.5rem; font-family: 'Barlow Condensed', sans-serif; font-weight: 900;
   font-size: 7rem; letter-spacing: -0.04em; color: rgba(255,255,255,0.04); text-transform: uppercase;
-  pointer-events: none; user-select: none; transition: opacity 0.3s; z-index: 0;
+  pointer-events: none; -webkit-user-select: none; user-select: none; transition: opacity 0.3s; z-index: 0;
 }
 .proj:hover .proj-bg-text { opacity: 0.3; }
-.proj-bg-text, .proj-arrow, .proj-cat, .proj-name, .proj-desc { position: relative; z-index: 2; }
+.proj-bg-text, .proj-arrow, .proj-cat, .proj-name { position: relative; z-index: 2; }
 .proj-bg-text { z-index: 0; }
 
 .proj--cta .proj-inner { justify-content: center; align-items: center; text-align: center; }
 .proj--cta { border: 1px solid var(--accent); }
 .proj--cta .proj-name { margin-bottom: 0.8rem; }
-.proj--cta .btn-primary { margin-top: 0.75rem; }
-
-.link-invisivel { color: inherit; text-decoration: none; display: block; }
+.proj--cta .btn-ghost { margin-top: 0.5rem; padding: 0.6rem 1.4rem; font-size: 0.85rem; }
 
 /* ── FAQ ── */
 #faq { padding: 6rem clamp(1.5rem, 8vw, 6rem); background: var(--bg); }
 .faq-list { margin-top: 3.5rem; border-top: 1px solid var(--border); }
 .faq-item { border-bottom: 1px solid var(--border); }
-.faq-question { width: 100%; background: none; border: none; cursor: pointer; padding: 1.6rem 0; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; text-align: left; min-height: 44px; }
+.faq-question { width: 100%; background: none; border: none; cursor: pointer; padding: 1.6rem 0; display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; text-align: left; }
 .faq-question span { font-family: 'Barlow Condensed', sans-serif; font-weight: 600; font-size: clamp(1.1rem, 2.2vw, 1.35rem); letter-spacing: 0.02em; color: var(--text); line-height: 1.3; transition: color 0.2s; }
 .faq-question:hover span, .faq-item.open .faq-question span { color: var(--accent); }
 .faq-icon { flex-shrink: 0; width: 1.6rem; height: 1.6rem; border: 1px solid var(--border); position: relative; transition: border-color 0.2s, background 0.2s; }
@@ -424,6 +613,7 @@ footer { padding: 2rem clamp(1.5rem, 8vw, 6rem); border-top: 1px solid var(--bor
 .footer-logo img:hover { opacity: 1; }
 footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
 #textofooter { color: var(--muted); }
+.link-invisivel { color: inherit; text-decoration: none; }
 
 /* ── GLOBAL ANIMATIONS ── */
 @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
@@ -435,34 +625,27 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
 .reveal.visible { opacity: 1; transform: translateY(0); }
 
 /* ── HAMBURGER ── */
-.nav-hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 2.6rem; height: 2.6rem; background: none; border: none; cursor: pointer; padding: 0; z-index: 200; }
+.nav-hamburger { display: none; flex-direction: column; justify-content: center; gap: 5px; width: 2.2rem; height: 2.2rem; background: none; border: none; cursor: pointer; padding: 0; z-index: 200; }
 .nav-hamburger span { display: block; width: 100%; height: 1.5px; background: var(--text); transition: transform 0.3s ease, opacity 0.3s ease; transform-origin: center; }
 .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
 .nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
 .nav-drawer {
-  display: none; position: fixed; top: 64px; left: 0; right: 0; bottom: 0; background: rgba(13,13,13,0.98);
+  display: none; position: fixed; top: 64px; left: 0; right: 0; background: rgba(13,13,13,0.98);
   -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border);
   z-index: 99; padding: 2rem clamp(1.5rem, 6vw, 2.5rem); flex-direction: column; gap: 0;
   transform: translateY(-8px); opacity: 0; transition: transform 0.3s ease, opacity 0.3s ease;
-  overflow-y: auto;
+  border-bottom-left-radius: 16px; border-bottom-right-radius: 16px;
 }
 .nav-drawer.open { display: flex; transform: translateY(0); opacity: 1; }
-.nav-drawer a { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); text-decoration: none; padding: 1rem 0; border-bottom: 1px solid var(--border); transition: color 0.2s; min-height: 44px; display: flex; align-items: center; }
+.nav-drawer a { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 2rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); text-decoration: none; padding: 0.9rem 0; border-bottom: 1px solid var(--border); transition: color 0.2s; }
 .nav-drawer a:last-child { border-bottom: none; }
 .nav-drawer a:hover { color: var(--accent); }
-.nav-drawer a.drawer-cta {
-  background: var(--accent); color: #000; text-align: center; justify-content: center;
-  border-radius: 8px; padding: 1rem; margin-top: 1rem; border-bottom: none; font-size: 1.3rem;
-}
 
 /* ── WHATSAPP FLUTUANTE ── */
 .whatsapp-float {
-  position: fixed;
-  bottom: calc(1.75rem + env(safe-area-inset-bottom));
-  right: calc(1.75rem + env(safe-area-inset-right));
-  width: 3.5rem; height: 3.5rem; background: #25D366;
+  position: fixed; bottom: 1.75rem; right: 1.75rem; width: 3.5rem; height: 3.5rem; background: #25D366;
   border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff;
   text-decoration: none; box-shadow: 0 4px 18px rgba(0,0,0,0.35); z-index: 200; transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -470,94 +653,51 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
 .whatsapp-float svg { position: relative; z-index: 2; }
 .whatsapp-float__pulse { position: absolute; inset: 0; border-radius: 50%; background: #25D366; opacity: 0.6; animation: waPulse 2.4s ease-out infinite; z-index: 1; }
 @keyframes waPulse { 0% { transform: scale(1); opacity: 0.6; } 100% { transform: scale(1.9); opacity: 0; } }
-@media (prefers-reduced-motion: reduce) {
-  .whatsapp-float__pulse { animation: none; opacity: 0; }
-  html { scroll-behavior: auto; }
-  .hero-tag, .hero-title .line1, .hero-title .accent-word, .hero-sub .hl, .stat-num, .marquee-inner { animation: none !important; }
+@media (prefers-reduced-motion: reduce) { .whatsapp-float__pulse { animation: none; opacity: 0; } html { scroll-behavior: auto; } }
+
+/* ── MOBILE ── */
+@media (max-width: 380px) {
+  .hero-title { font-size: clamp(2.8rem, 18vw, 4rem); }
+  .hero-stats { gap: 1rem; }
+  .stat-num { font-size: 1.7rem; }
 }
 
-/* ════════════════════════════════
-   MOBILE ≤ 768px
-════════════════════════════════ */
 @media (max-width: 768px) {
-
-  /* perf: desliga ruído e sombras pesadas em telas menores */
-  body::before { display: none; }
-  .hero-title .line1,
-  .hero-title .accent-word,
-  .hero-title .line2 { filter: none; }
-
   .nav-links { display: none; }
-  .nav-cta   { display: none; }
+  .nav-cta { display: none; }
   .nav-hamburger { display: flex; }
 
-  #hero { padding: 5.5rem 1.25rem 4.5rem; min-height: 100svh; }
+  #hero { padding: 5.5rem 1.5rem 5rem; min-height: 100svh; }
   .hero-mark { width: 4rem; height: 4rem; margin-bottom: 1.5rem; }
-  .hero-tag  {
-    font-size: 0.65rem; letter-spacing: 0.12em; margin-bottom: 1.1rem;
-    max-width: 300px; line-height: 1.6;
-  }
-  .hero-title { font-size: 3px; line-height: 1.05; }
+  .hero-tag { font-size: 0.7rem; letter-spacing: 0.16em; margin-bottom: 1rem; }
+  .hero-title { font-size: clamp(3rem, 15vw, 5rem); }
   .hero-divider::before, .hero-divider::after { width: 2.5rem; }
-  .hero-sub { font-size: 1.3rem; max-width: 100%; }
+  .hero-sub { font-size: 0.92rem; max-width: 100%; }
   .hero-actions { flex-direction: column; align-items: center; gap: 0.75rem; width: 100%; }
-  .btn-primary, .btn-ghost { width: 100%; text-align: center; padding: 1rem 1.5rem; justify-content: center; font-size: 1.3rem; letter-spacing: 0.08em; }
-  .btn-icon svg { width: 1.25rem; height: 1.25rem; }
-
-  /* stats empilhados — texto longo não cabe em linha */
-  .hero-stats {
-    flex-direction: column;
-    gap: 1.25rem;
-    margin-top: 2.5rem;
-    padding-top: 1.5rem;
-    width: 100%;
-  }
-  .stat { max-width: 280px; margin: 0 auto; }
+  .btn-primary, .btn-ghost { width: 100%; text-align: center; padding: 1rem 1.5rem; }
+  .hero-stats { gap: 1.5rem; margin-top: 2.5rem; padding-top: 1.5rem; width: 100%; justify-content: center; }
   .stat-num { font-size: 2rem; }
-  .stat-label { font-size: 0.68rem; }
   .scroll-hint { display: none; }
 
   .marquee-inner { gap: 1.2rem; }
   .marquee-inner span { font-size: 0.72rem; }
 
-  #dor, #servicos, #processo, #portfolio, #faq, #contato, #garantia { padding: 4rem 1.5rem; }
+  #dor, #servicos, #processo, #portfolio, #faq, #contato { padding: 4rem 1.5rem; }
   .section-title { font-size: clamp(2.2rem, 10vw, 3.5rem); }
   .dor-quote { font-size: clamp(1.4rem, 6vw, 2rem); }
-  .dor-text { font-size: 0.95rem; }
 
   .services-grid { grid-template-columns: 1fr; margin-top: 2.5rem; }
-  .service-card  { padding: 2rem 1.5rem; }
+  .service-card { padding: 2rem 1.5rem; }
 
   .process-steps { grid-template-columns: 1fr; margin-top: 2.5rem; }
-  .process-step  { border-right: none; border-bottom: 1px solid var(--border); padding: 1.5rem 0; }
+  .process-step { border-right: none; border-bottom: 1px solid var(--border); padding: 1.5rem 0; }
   .process-step:last-child { border-bottom: none; }
   .step-num { font-size: 3.5rem; }
 
-  /* portfólio: descrições longas precisam de altura livre, não aspect-ratio fixo */
   .portfolio-grid { grid-template-columns: 1fr; }
-  .proj-inner {
-    aspect-ratio: auto;
-    min-height: 300px;
-    padding: 1.5rem 1.25rem;
-  }
-  .proj-cat {
-    font-size: 0.72rem;
-    letter-spacing: 0.05em;
-    line-height: 1.4;
-  }
-  .proj-name { font-size: 1.4rem; }
-  .proj-desc {
-    font-size: 0.8rem;
-    line-height: 1.6;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
+  .proj-inner { aspect-ratio: 16 / 11; padding: 1.5rem; }
   .proj-bg-text { font-size: 4.5rem; }
   .portfolio-header { flex-direction: column; gap: 1rem; }
-
-  .garantia-grid { grid-template-columns: 1fr; gap: 1rem; }
 
   .cta-title { font-size: clamp(2.5rem, 12vw, 4rem); }
   .cta-links { flex-direction: column; align-items: center; }
@@ -565,21 +705,10 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
 
   footer { flex-direction: column; align-items: flex-start; gap: 0.6rem; padding: 1.5rem; }
   .footer-logo img { height: 24px; }
-  .whatsapp-float { bottom: calc(1.25rem + env(safe-area-inset-bottom)); right: calc(1.25rem + env(safe-area-inset-right)); width: 3.2rem; height: 3.2rem; }
+  .whatsapp-float { bottom: 1.25rem; right: 1.25rem; width: 3.2rem; height: 3.2rem; }
 
   .faq-question { padding: 1.3rem 0; gap: 1rem; }
   .faq-item.open .faq-answer { max-height: 600px; }
-}
-
-/* ── EXTRA SMALL ≤ 480px ── */
-@media (max-width: 480px) {
-  .hero-title { font-size: 3.4rem; }
-  .hero-tag { max-width: 260px; font-size: 0.6rem; }
-  .hero-stats { gap: 1rem; }
-  .stat-num { font-size: 1.8rem; }
-  .proj-inner { min-height: 260px; padding: 1.25rem 1rem; }
-  .proj-desc { -webkit-line-clamp: 3; }
-  .section-title { font-size: clamp(1.9rem, 11vw, 2.8rem); }
 }
 </style>
 
@@ -597,7 +726,7 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
     <li><a href="#faq">Dúvidas</a></li>
   </ul>
   <a class="nav-cta" href="https://wa.me/5579998523718?text=Ol%C3%A1%20Matheus%2C%20quero%20solicitar%20um%20or%C3%A7amento%20para%20a%20cria%C3%A7%C3%A3o%20de%20um%20site%20profissional%20para%20o%20meu%20neg%C3%B3cio" target="_blank" rel="noopener">
-    Faça sua empresa ser vista</a>
+    FAÇA SUA EMPRESA SER VISTA!</a>
   <button class="nav-hamburger" id="hamburger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
 </nav>
 
@@ -606,7 +735,7 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
   <a href="#servicos">Diferenciais</a>
   <a href="#portfolio">Portfólio</a>
   <a href="#faq">Dúvidas</a>
-  <a class="drawer-cta" href="https://wa.me/5579998523718?text=Ol%C3%A1%20Matheus%2C%20quero%20solicitar%20um%20or%C3%A7amento%20para%20a%20cria%C3%A7%C3%A3o%20de%20um%20site%20profissional%20para%20o%20meu%20neg%C3%B3cio" target="_blank" rel="noopener">FAÇA SUA EMPRESA SER VISTA!</a>
+  <a href="https://wa.me/5579998523718?text=Ol%C3%A1%20Matheus%2C%20quero%20solicitar%20um%20or%C3%A7amento%20para%20a%20cria%C3%A7%C3%A3o%20de%20um%20site%20profissional%20para%20o%20meu%20neg%C3%B3cio" target="_blank" rel="noopener" style="color:var(--accent)">FAÇA SUA EMPRESA SER VISTA!</a>
 </div>
 
 <!-- HERO -->
@@ -635,16 +764,16 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
     <span class="hero-tag">Criação de Sites Profissionais para empresas de Aracaju-SE e Todo Brasil</span>
 
     <h1 class="hero-title">
-      <span class="line1">Seu Negócio no</span>
-      <span class="line2">Topo do Google</span>
-      <span class="accent-word">Credibilidade Máxima</span>
+      <span class="line1">SEU NEGÓCIO NO TOPO</span>
+      <span class="accent-word"> DO GOOGLE E COM CREDIBILIDADE MÁXIMA.</span>      
+      <span class="line2"></span>
     </h1>
 
     <div class="hero-divider"><span class="diamond"></span></div>
 
     <p class="hero-sub">
-    Não dependa apenas do Instagram. Desenvolvemos sites corporativos <span class="hl">ultrarrápidos,
-    modernos e otimizados</span> para transformar pesquisas no Google em <span class="hl">clientes reais</span> para a sua empresa.
+    Não dependa apenas do Instagram. Desenvolvemos sites corporativos <span class="hl">ultrarrápidos, 
+    modernos e otimizados</span> para transformar pesquisas no Google em <span class="hl">clientes reais</span> para a sua empresa.  
     </p>
 
     <div class="hero-actions">
@@ -656,8 +785,8 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
     </div>
 
     <div class="hero-stats">
-      <div class="stat"><div class="stat-num">10+</div><div class="stat-label">Empresas parceiras</div></div>
-      <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Pronto para o Google</div></div>
+      <div class="stat"><div class="stat-num">Mais de 10</div><div class="stat-label">Empresas parceiras</div></div>
+      <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Pronto para ser recomendado pelo Google e ChatGPT</div></div>
       <div class="stat"><div class="stat-num">30 dias</div><div class="stat-label">Suporte Incluso</div></div>
     </div>
   </div>
@@ -691,10 +820,10 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
     <p class="dor-quote">Redes sociais geram <em>engajamento</em>. Sites geram <em>vendas e autoridade</em>.</p>
     <div class="dor-text">
       <p><strong>
-        Depender apenas de redes sociais é construir sua empresa em terreno alugado.
-        Se o algoritmo muda ou sua conta oscila, suas vendas caem.
-        Quando alguém precisa do seu serviço em Aracaju, a primeira atitude é pesquisar no Google.
-        Se sua empresa não está lá — ou se tem um site lento e antigo —, você está entregando clientes
+        Depender apenas de redes sociais é construir sua empresa em terreno alugado. 
+        Se o algoritmo muda ou sua conta oscila, suas vendas caem. 
+        Quando alguém precisa do seu serviço em Aracaju, a primeira atitude é pesquisar no Google. 
+        Se sua empresa não está lá — ou se tem um site lento e antigo —, você está entregando clientes 
         prontos para os seus concorrentes.</strong></p>
     </div>
   </div>
@@ -775,8 +904,9 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
     <div class="proj">
       <a href="http://ajuteccel.com.br" target="_blank" rel="noopener noreferrer" class="link-invisivel">
         <div class="proj-inner">
-          <img src="../assets/img/ajuteccelprint (1).webp" alt="Site da AJUTEC CEL, loja de reparo e venda de celulares em Aracaju" class="proj-shot" loading="lazy" decoding="async" width="1600" height="1000">
-          <div class="proj-overlay"></div>
+          <img src="../assets/img/ajuteccelprint (1).webp" alt="Site da AJUTEC CEL, loja de reparo e venda de celulares em Aracaju" class="proj-shot" loading="lazy" width="1600" height="1000">
+          <!-- <div class="proj-bg-text">SMARTPHONE</div> -->
+          <!-- <div class="proj-arrow"><svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg></div> -->
           <p class="proj-cat">Loja de reparo e venda de celulares com ênfase em captação de clientes via localização do Google MAPS</p>
           <h3 class="proj-name">AJUTEC CEL</h3>
           <p class="proj-desc">Interface de alta performance voltada para manutenção de smartphones. Paleta azul tecnológico, laranja e grafite, carregamento instantâneo e CTA para orçamentos rápidos via WhatsApp. Empresa localizada em Aracaju-SE e me procurou para melhorar sua localização no Google.</p>
@@ -786,8 +916,9 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
     <div class="proj">
       <a href="https://freireefreire.adv.br/" target="_blank" rel="noopener noreferrer" class="link-invisivel">
       <div class="proj-inner">
-        <img src="" alt="Site Landing Page do escritório de Advocacia Freire e Freire, localizado em Aracaju-SERGIPE" class="proj-shot" loading="lazy" decoding="async" width="1600" height="1000">
-        <div class="proj-overlay"></div>
+        <img src="" alt="Site Landing Page do escritório de Advocacia Freire e Freire, localizado em Aracaju-SERGIPE" class="proj-shot" loading="lazy" width="1600" height="1000">
+        <!-- <div class="proj-bg-text">Advocacia</div> -->
+        <!-- <div class="proj-arrow"><svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg></div> -->
         <p class="proj-cat">Escritório de Advocacia com foco em captação de clientes e imagem corporativa</p>
         <h3 class="proj-name">Freire &amp; Freire</h3>
         <p class="proj-desc">Paleta marrom profundo e dourado, menu mobile hambúrguer e Google Maps embed. Elegância e autoridade. Empresa localizada em Aracaju-SE e também me procurou para melhorar sua localização no Google e captar mais clientes.</p>
@@ -797,8 +928,9 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
     <div class="proj">
       <a href="http://grupoajutec.com.br" target="_blank" rel="noopener noreferrer" class="link-invisivel">
         <div class="proj-inner">
-          <img src="../assets/img/grupoajutec.webp" alt="Site institucional do Grupo AJUTEC, ecossistema de tecnologia" class="proj-shot" loading="lazy" decoding="async" width="1600" height="1000">
-          <div class="proj-overlay"></div>
+          <img src="../assets/img/grupoajutec.webp" alt="Site institucional do Grupo AJUTEC, ecossistema de tecnologia" class="proj-shot" loading="lazy" width="1600" height="1000">
+          <!-- <div class="proj-bg-text">AJUTEC</div> -->
+          <!-- <div class="proj-arrow"><svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg></div> -->
           <p class="proj-cat">Reformulação de marca digital e criação de site corporativo para ecossistema de tecnologia em Aracaju.</p>
           <h3 class="proj-name">Grupo AJUTEC</h3>
           <p class="proj-desc">Ecossistema multi-página para quatro marcas: SEO completo, tema escuro e identidade consistente. Grupo empresarial que atua em todo o Brasil e queria modernizar sua presença digital com um site moderno e responsivo.</p>
@@ -808,8 +940,9 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
     <div class="proj">
       <a href="http://fferreirainfo.com.br" target="_blank" rel="noopener noreferrer" class="link-invisivel">
       <div class="proj-inner">
-        <img src="../assets/img/fferreirainfo (1).webp" alt="Site da FFerreira Info, empresa de prestação de serviços diversos em TI" class="proj-shot" loading="lazy" decoding="async" width="1600" height="1000">
-        <div class="proj-overlay"></div>
+        <img src="../assets/img/fferreirainfo (1).webp" alt="Site da FFerreira Info, empresa de prestação de serviços diversos em TI" class="proj-shot" loading="lazy" width="1600" height="1000">
+        <!-- <div class="proj-bg-text">Informática</div> -->
+        <!-- <div class="proj-arrow"><svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg></div> -->
         <p class="proj-cat">TI &amp; Informática · Institucional</p>
         <h3 class="proj-name">FFerreira Info</h3>
         <p class="proj-desc">Design direto para serviços de suporte de TI. Estrutura leve em código puro, carregamento ultra veloz e foco total em conversão local. Empresa atua em todo o estado de Sergipe e também me procurou para melhorar sua localização no Google e captar mais clientes.</p>
@@ -819,8 +952,9 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
     <div class="proj">
       <a href="http://ajutec.seg.br" target="_blank" rel="noopener noreferrer" class="link-invisivel">
         <div class="proj-inner">
-          <img src="../assets/img/ajutecseg.webp" alt="Site institucional da Ajutec Seg, segurança eletrônica" class="proj-shot" loading="lazy" decoding="async" width="1600" height="1000">
-          <div class="proj-overlay"></div>
+          <img src="../assets/img/ajutecseg.webp" alt="Site institucional da Ajutec Seg, segurança eletrônica" class="proj-shot" loading="lazy" width="1600" height="1000">
+          <!-- <div class="proj-bg-text">SEGURANÇA</div> -->
+          <!-- <div class="proj-arrow"><svg viewBox="0 0 24 24"><path d="M5 3l14 9-14 9V3z"/></svg></div> -->
           <p class="proj-cat">Site institucional focado na apresentação de serviços de segurança e captação rápida de orçamentos.</p>
           <h3 class="proj-name">Ajutec Seg</h3>
           <p class="proj-desc">Plataforma institucional robusta desenvolvida para o segmento de monitoramento e segurança patrimonial. Traz uma interface premium com paleta sóbria e alto contraste para transmitir autoridade, proteção e máxima confiabilidade. Conta com catálogo estruturado de soluções residenciais e corporativas, código limpo e semântico para máxima performance e pontos estratégicos de conversão para chamados e orçamentos. Empresa também atua em todo o Brasil e queria modernizar sua presença digital com um site moderno e responsivo, tanto para captar clientes, quanto para transmitir uma imagem profissional aos clientes.</p>
@@ -837,12 +971,13 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
   </div>
 </section>
 
-<!-- GARANTIA -->
+<!-- ── GARANTIA E PROCESSO SEGURO ── -->
 <section id="garantia">
   <div class="section-label">Processo Transparente</div>
   <h2 class="section-title">Zero risco para o seu <em>investimento</em></h2>
 
   <div class="garantia-grid">
+    <!-- Selo 1 -->
     <div class="garantia-card">
       <div class="garantia-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -851,8 +986,12 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
         </svg>
       </div>
       <h3 class="garantia-title">Aprovação em Etapas</h3>
-      <p class="garantia-desc">Você acompanha a construção do layout do início ao fim e aprova cada detalhe da estrutura antes do site ir definitivamente ao ar.</p>
+      <p class="garantia-desc">
+        Você acompanha a construção do layout do início ao fim e aprova cada detalhe da estrutura antes do site ir definitivamente ao ar.
+      </p>
     </div>
+
+    <!-- Selo 2 -->
     <div class="garantia-card">
       <div class="garantia-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -860,8 +999,12 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
         </svg>
       </div>
       <h3 class="garantia-title">30 Dias de Suporte</h3>
-      <p class="garantia-desc">Garantia pós-lançamento inclusa. Fazemos ajustes finos, trocas de textos e correções sem qualquer custo adicional após a entrega.</p>
+      <p class="garantia-desc">
+        Garantia pós-lançamento inclusa. Fazemos ajustes finos, trocas de textos e correções sem qualquer custo adicional após a entrega.
+      </p>
     </div>
+
+    <!-- Selo 3 -->
     <div class="garantia-card">
       <div class="garantia-icon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -870,7 +1013,9 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
         </svg>
       </div>
       <h3 class="garantia-title">Sem Surpresas</h3>
-      <p class="garantia-desc">Orçamento claro, transparente e com valor fechado combinado antes do início do projeto. Sem taxas ocultas no final.</p>
+      <p class="garantia-desc">
+        Orçamento claro, transparente e com valor fechado combinado antes do início do projeto. Sem taxas ocultas no final.
+      </p>
     </div>
   </div>
 </section>
@@ -937,21 +1082,21 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
 </a>
 
 <script>
+  // Hamburger menu
   var hamburger = document.getElementById('hamburger');
   var drawer = document.getElementById('drawer');
   hamburger.addEventListener('click', function(){
     hamburger.classList.toggle('open');
     drawer.classList.toggle('open');
-    document.body.style.overflow = drawer.classList.contains('open') ? 'hidden' : '';
   });
   drawer.querySelectorAll('a').forEach(function(a){
     a.addEventListener('click', function(){
       hamburger.classList.remove('open');
       drawer.classList.remove('open');
-      document.body.style.overflow = '';
     });
   });
 
+  // FAQ accordion
   document.querySelectorAll('.faq-item').forEach(function(item){
     var btn = item.querySelector('.faq-question');
     var answer = item.querySelector('.faq-answer');
@@ -973,6 +1118,7 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
     });
   });
 
+  // Scroll reveal
   var observer = new IntersectionObserver(function(entries){
     entries.forEach(function(entry){
       if(entry.isIntersecting){
