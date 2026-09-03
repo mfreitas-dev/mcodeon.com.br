@@ -354,19 +354,14 @@ section { position: relative; z-index: 1; }
 .proj-inner { position: relative; overflow: hidden; aspect-ratio: 16 / 10; padding: 1.75rem; display: flex; flex-direction: column; justify-content: flex-end; }
 .proj-shot {
   position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 20%;
-  opacity: 0.45; transition: opacity 0.35s ease, transform 0.5s ease; z-index: 0;
+  opacity: 0.65; transition: opacity 0.35s ease, transform 0.5s ease; z-index: 0;
   background: linear-gradient(155deg, var(--bg3), var(--bg));
 }
-.proj:hover .proj-shot { opacity: 0.7; transform: scale(1.04); }
+.proj:hover .proj-shot { opacity: 0.9; transform: scale(1.04); }
 .proj-overlay { position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,13,13,0.97) 0%, rgba(13,13,13,0.88) 40%, rgba(13,13,13,0.6) 75%, rgba(13,13,13,0.5) 100%); z-index: 1; }
 .proj-cat { font-family: 'Barlow Condensed', sans-serif; font-size: 0.92rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem; line-height: 1.35; }
 .proj-name { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 1.6rem; text-transform: uppercase; letter-spacing: 0.02em; margin-bottom: 0.5rem; }
 .proj-desc { font-size: 0.82rem; color: var(--text); line-height: 1.7; }
-.proj-arrow {
-  position: absolute; top: 1.5rem; right: 1.5rem; width: 2.2rem; height: 2.2rem; border: 1px solid var(--border);
-  display: flex; align-items: center; justify-content: center; opacity: 0; transform: translate(-4px, 4px);
-  transition: opacity 0.25s, transform 0.25s; border-radius: 6px; z-index: 2; background: var(--bg);
-}
 .proj:hover .proj-arrow { opacity: 1; transform: translate(0,0); }
 .proj-arrow svg { width: 14px; fill: var(--accent); }
 .proj-bg-text {
@@ -789,7 +784,7 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
     <div class="proj">
       <a href="https://freireefreire.adv.br/" target="_blank" rel="noopener noreferrer" class="link-invisivel">
       <div class="proj-inner">
-        <img src="" alt="Site Landing Page do escritório de Advocacia Freire e Freire, localizado em Aracaju-SERGIPE" class="proj-shot" loading="lazy" decoding="async" width="1600" height="1000">
+        <img src="../assets/img/freireefreire.webp" alt="Site Landing Page do escritório de Advocacia Freire e Freire, localizado em Aracaju-SERGIPE" class="proj-shot" loading="lazy" decoding="async" width="1600" height="1000">
         <div class="proj-overlay"></div>
         <p class="proj-cat">Escritório de Advocacia com foco em captação de clientes e imagem corporativa</p>
         <h3 class="proj-name">Freire &amp; Freire</h3>
