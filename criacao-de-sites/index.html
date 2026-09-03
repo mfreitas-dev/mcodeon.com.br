@@ -279,7 +279,7 @@ nav {
 }
 .stat:nth-child(2) .stat-num { animation-delay: 0.6s; }
 .stat:nth-child(3) .stat-num { animation-delay: 1.2s; }
-.stat-label { font-size: 0.88rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text); margin-top: 0.4rem; }
+.stat-label { font-size: 1.2rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text); margin-top: 0.4rem; }
 
 .scroll-hint { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 0.5rem; opacity: 0; animation: fadeUp 0.7s 1.4s forwards; }
 .scroll-hint span { font-family: 'Barlow Condensed', sans-serif; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); }
@@ -372,7 +372,7 @@ section { position: relative; z-index: 1; }
 .proj-bg-text {
   position: absolute; bottom: -1rem; right: -0.5rem; font-family: 'Barlow Condensed', sans-serif; font-weight: 900;
   font-size: 7rem; letter-spacing: -0.04em; color: rgba(255,255,255,0.04); text-transform: uppercase;
-  pointer-events: none; user-select: none; transition: opacity 0.3s; z-index: 0;
+  pointer-events: none; -webkit-user-select: none; user-select: none; transition: opacity 0.3s; z-index: 0;
 }
 .proj:hover .proj-bg-text { opacity: 0.3; }
 .proj-bg-text, .proj-arrow, .proj-cat, .proj-name, .proj-desc { position: relative; z-index: 2; }
@@ -513,8 +513,8 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
     width: 100%;
   }
   .stat { max-width: 280px; margin: 0 auto; }
-  .stat-num { font-size: 2rem; }
-  .stat-label { font-size: 0.68rem; }
+  /* .stat-num { font-size: 2.8rem; } */
+  /* .stat-label { font-size: 0.68rem; } */
   .scroll-hint { display: none; }
 
   .marquee-inner { gap: 1.2rem; }
@@ -522,7 +522,7 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
 
   #dor, #servicos, #processo, #portfolio, #faq, #contato, #garantia { padding: 4rem 1.5rem; }
   .section-title { font-size: clamp(2.2rem, 10vw, 3.5rem); }
-  .dor-quote { font-size: clamp(1.4rem, 6vw, 2rem); }
+  .dor-quote { font-size: 2.5rem; }
   .dor-text { font-size: 0.95rem; }
 
   .services-grid { grid-template-columns: 1fr; margin-top: 2.5rem; }
@@ -550,7 +550,7 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
     font-size: 0.8rem;
     line-height: 1.6;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 4; line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
@@ -576,9 +576,9 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
   .hero-title { font-size: 3.4rem; }
   .hero-tag { max-width: 260px; font-size: 0.6rem; }
   .hero-stats { gap: 1rem; }
-  .stat-num { font-size: 1.8rem; }
+  .stat-num { font-size: 3rem; }
   .proj-inner { min-height: 260px; padding: 1.25rem 1rem; }
-  .proj-desc { -webkit-line-clamp: 3; }
+  .proj-desc { -webkit-line-clamp: 3; line-clamp: 3;}
   .section-title { font-size: clamp(1.9rem, 11vw, 2.8rem); }
 }
 </style>
@@ -635,8 +635,8 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
     <span class="hero-tag">Criação de Sites Profissionais para empresas de Aracaju-SE e Todo Brasil</span>
 
     <h1 class="hero-title">
-      <span class="line1">Seu Negócio no</span>
-      <span class="line2">Topo do Google</span>
+      <span class="line1">Seu Negócio </span>
+      <span class="line2">no Topo do Google</span>
       <span class="accent-word">Credibilidade Máxima</span>
     </h1>
 
