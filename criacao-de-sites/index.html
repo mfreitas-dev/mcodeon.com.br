@@ -481,6 +481,8 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
 ════════════════════════════════ */
 @media (max-width: 768px) {
 
+  .proj-desc {display: none;}
+
   /* perf: desliga ruído e sombras pesadas em telas menores */
   body::before { display: none; }
   .hero-title .line1,
@@ -546,14 +548,14 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
     line-height: 1.4;
   }
   .proj-name { font-size: 1.4rem; }
-  .proj-desc {
+  /* .proj-desc {
     font-size: 0.8rem;
     line-height: 1.6;
     display: -webkit-box;
     -webkit-line-clamp: 4; line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
-  }
+  } */
   .proj-bg-text { font-size: 4.5rem; }
   .portfolio-header { flex-direction: column; gap: 1rem; }
 
@@ -578,7 +580,6 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
   .hero-stats { gap: 1rem; }
   .stat-num { font-size: 3rem; }
   .proj-inner { min-height: 260px; padding: 1.25rem 1rem; }
-  .proj-desc { -webkit-line-clamp: 3; line-clamp: 3;}
   .section-title { font-size: clamp(1.9rem, 11vw, 2.8rem); }
 }
 </style>
@@ -589,10 +590,11 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
 <div class="grid-lines"><span></span><span></span><span></span><span></span></div>
 
 <nav>
-  <a href="/criacao-de-sites/" class="nav-logo"><img src="https://mcodeon.com.br/assets/img/logo-horizontal-semfundo.png" alt="Logo da MCODEON"></a>
+  <a href="../index.html" class="nav-logo"><img src="https://mcodeon.com.br/assets/img/logo-horizontal-semfundo.png" alt="Logo da MCODEON"></a>
   <ul class="nav-links">
     <li><a href="#dor">Por que ter um site</a></li>
     <li><a href="#servicos">Diferenciais</a></li>
+    <li><a href="#processo">Processo</a></li>
     <li><a href="#portfolio">Portfólio</a></li>
     <li><a href="#faq">Dúvidas</a></li>
   </ul>
@@ -604,6 +606,7 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
 <div class="nav-drawer" id="drawer">
   <a href="#dor">Por que ter um site</a>
   <a href="#servicos">Diferenciais</a>
+  <a href="#processo">Processo</a>
   <a href="#portfolio">Portfólio</a>
   <a href="#faq">Dúvidas</a>
   <a class="drawer-cta" href="https://wa.me/5579998523718?text=Ol%C3%A1%20Matheus%2C%20quero%20solicitar%20um%20or%C3%A7amento%20para%20a%20cria%C3%A7%C3%A3o%20de%20um%20site%20profissional%20para%20o%20meu%20neg%C3%B3cio" target="_blank" rel="noopener">FAÇA SUA EMPRESA SER VISTA!</a>
@@ -810,7 +813,7 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
       <div class="proj-inner">
         <img src="../assets/img/fferreirainfo (1).webp" alt="Site da FFerreira Info, empresa de prestação de serviços diversos em TI" class="proj-shot" loading="lazy" decoding="async" width="1600" height="1000">
         <div class="proj-overlay"></div>
-        <p class="proj-cat">TI &amp; Informática · Institucional</p>
+        <p class="proj-cat">foco em captação de clientes para prestação de serviços de TI</p>
         <h3 class="proj-name">FFerreira Info</h3>
         <p class="proj-desc">Design direto para serviços de suporte de TI. Estrutura leve em código puro, carregamento ultra veloz e foco total em conversão local. Empresa atua em todo o estado de Sergipe e também me procurou para melhorar sua localização no Google e captar mais clientes.</p>
       </div>

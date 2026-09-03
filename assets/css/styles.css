@@ -1210,6 +1210,8 @@ footer p { font-size: 0.78rem; color: var(--muted); letter-spacing: 0.05em; }
 .proj-bg-text { display: none; }
 @media (max-width: 768px) {
 
+  .proj-desc {display: none;}
+
   /* NAV */
   .nav-links { display: none; }
   .nav-cta   { display: none; }
