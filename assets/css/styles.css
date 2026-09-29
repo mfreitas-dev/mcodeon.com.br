@@ -323,7 +323,7 @@ nav {
   text-transform: uppercase; color: #000; background: var(--accent); border: none; padding: 1.05rem 2.4rem;
   cursor: pointer; text-decoration: none; display: inline-block; transition: background 0.2s, transform 0.15s; border-radius: 6px;
   animation: shimmerAccent 4.6s 0s ease-in-out infinite;
-  filter: drop-shadow(0 0 22px rgba(0,200,150,0.5)) drop-shadow(0 0 50px rgba(0,200,150,0.2));
+  filter: drop-shadow(0 0 22px rgba(0,200,150,0.5)) drop-shadow(0 0 50px rgba(0,200,150,0.2)); margin-top: auto;
 
 }
 .btn-primary:hover { background: var(--accent2); transform: translateY(-2px); }
@@ -566,6 +566,8 @@ section { position: relative; z-index: 1; }
   position: relative;
   overflow: hidden;
   transition: background 0.25s;
+  display: flex;
+  flex-direction: column;
 }
 .service-card::before {
   content: '';
